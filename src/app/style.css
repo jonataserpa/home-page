@@ -1,0 +1,88 @@
+/*
+*/
+body {
+    background: linear-gradient(to bottom right, rgb(15, 10, 10), rgb(54, 54, 40));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  color: cornsilk;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.corporate-info {
+  /* style for footer corporate info */
+}
+
+.signpost {
+  position: relative;
+}
+
+.board {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  bottom: 0;
+  /* translate the element horizontally by 50% of its own width */
+  transform: translate(-50%, 0);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  animation: walk 15s linear infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
