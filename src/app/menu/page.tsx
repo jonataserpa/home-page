@@ -13,7 +13,6 @@ import Tooltip from '@mui/material/Tooltip'
 import PersonAdd from '@mui/icons-material/PersonAdd'
 import Settings from '@mui/icons-material/Settings'
 import Logout from '@mui/icons-material/Logout'
-import Link from 'next/link'
 import brasao from '../Brasao-serpa.png'
 import Image from 'next/image'
 
@@ -26,7 +25,6 @@ export default function AccountMenu() {
   const handleClose = () => {
     setAnchorEl(null)
   }
-  // const armsIcon: StaticImageData = <img src={brasao} alt="Brasão" />
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
