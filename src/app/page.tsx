@@ -712,7 +712,7 @@ export default function Home() {
       <footer className="footer">
         <div className="container">
           <p className="copyright">
-            Copyright &copy; Poket all rights reserved.
+            Copyright &copy; Jonata Serpa all rights reserved.
           </p>
         </div>
       </footer>
